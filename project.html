@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유희왕 패왕마술사 덱 가이드 (2024-2025)</title>
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #1a1e26;
+            --primary: #8a2be2;
+            --secondary: #ffd700;
+            --text: #e0e0e0;
+            --accent: #4b0082;
+            --border: #30363d;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--accent), var(--bg-color));
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h1 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .deck-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .deck-category h3 {
+            color: var(--secondary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #252a33;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li span.count {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .highlight-card {
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid var(--primary);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .tip-box {
+            background: #2d1a3d;
+            border-left: 4px solid var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            background: var(--card-bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1.5rem;
+            cursor: pointer;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .combo-step {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-num {
+            background: var(--primary);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Magician Deck Guide</h1>
+    <p>2024-2025 패왕마술사 메타 리서치 & 가이드</p>
+</header>
+
+<div class="container">
+    <section id="intro">
+        <h2>현재의 마술사 덱</h2>
+        <p>현재 마술사 덱은 <strong>'패왕문 마술사'</strong>를 필두로 한 패왕 엔진을 섞는 것이 가장 강력합니다. 압도적인 아드 창출 능력과 유연한 엑스트라 덱 활용으로 티어권에서 여전히 강력한 한 축을 담당하고 있습니다.</p>
+    </section>
+
+    <section id="recipe">
+        <h2>Deck Recipe (OCG 기준)</h2>
+        <div class="deck-grid">
+            <div class="deck-category">
+                <h3>몬스터 (30매)</h3>
+                <ul>
+                    <li><span>패왕문 마술사</span> <span class="count">×3</span></li>
+                    <li><span>혜안의 마술사</span> <span class="count">×3</span></li>
+                    <li><span>조현의 마술사</span> <span class="count">×3</span></li>
+                    <li><span>EM 도쿠로배트 조커</span> <span class="count">×3</span></li>
+                    <li><span>아스트로그래프 매지션</span> <span class="count">×1</span></li>
+                    <li><span>홍채 / 천룡 / 자독의 마술사</span> <span class="count">각 ×1</span></li>
+                    <li><span>패왕권룡 다크브룸 / 패왕문 제로</span> <span class="count">각 ×1</span></li>
+                    <li><span>하루 우라라 / 증식의 G</span> <span class="count">각 ×3</span></li>
+                </ul>
+            </div>
+            <div class="deck-category">
+                <h3>마법/함정 & 엑스트라</h3>
+                <ul>
+                    <li><span>듀얼리스트 어드밴트</span> <span class="count">×3</span></li>
+                    <li><span>용의 영묘</span> <span class="count">×2</span></li>
+                    <li><span>시공의 펜듈럼그래프</span> <span class="count">×1</span></li>
+                    <li style="border-top: 2px solid var(--border); margin-top: 1rem; padding-top: 1rem;"><span>헤비메탈포제 엘렉트럼</span> <span class="count">×1</span></li>
+                    <li><span>비욘드 / 엑시드 더 펜듈럼</span> <span class="count">각 ×1</span></li>
+                    <li><span>바렐로드 S 드래곤 / 바로네스</span> <span class="count">각 ×1</span></li>
+                    <li><span>패왕권룡 스타브 베놈</span> <span class="count">×2</span></li>
+                    <li><span>심연의 잠복자 / 아제우스</span> <span class="count">각 ×1</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategy">
+        <h2>핵심 전략 & 팁</h2>
+        <div class="highlight-card">
+            <strong>1. 엘렉트럼 & 아스트로 루프</strong>
+            <p>필드의 카드를 파괴하고 아스트로그래프를 패로 가져오는 엘렉트럼의 효과를 통해 자원을 계속 복사하는 것이 운영의 핵심입니다.</p>
+        </div>
+        
+        <div class="tip-box">
+            <strong>💡 메타 대응 팁:</strong>
+            <p>상대의 <strong>증식의 G</strong>가 통과되었다면, 무리하지 말고 <strong>'이수마수 바구스카'</strong>를 세워 턴을 받는 전략이 유효합니다. 묘지 자원을 쓰는 덱 상대로는 <strong>'심연의 잠복자'</strong>를 최우선으로 고려하세요.</p>
+        </div>
+    </section>
+
+    <section id="combo">
+        <h2>기본 전개 콤보</h2>
+        <div class="combo-step">
+            <div class="step-num">1</div>
+            <div>다크브룸 덤핑 후 소환, 패왕문 제로 서치</div>
+        </div>
+        <div class="combo-step">
+            <div class="step-num">2</div>
+            <div>패왕문 마술사 효과로 자신 소환 및 자원 서치</div>
+        </div>
+        <div class="combo-step">
+            <div class="step-num">3</div>
+            <div>엘렉트럼 링크 소환 -> 아스트로그래프 엑스트라 덱 세팅</div>
+        </div>
+        <div class="combo-step">
+            <div class="step-num">4</div>
+            <div>펜듈럼 소환으로 엑스트라 덱/패의 몬스터 대량 전개</div>
+        </div>
+        <div class="combo-step">
+            <div class="step-num">5</div>
+            <div>아폴로우사, 바로네스, 시공의 마술사로 최종 빌드 완성</div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 Magician Deck Archive. 정보를 바탕으로 자동 생성된 페이지입니다.</p>
+</footer>
+
+</body>
+</html>
